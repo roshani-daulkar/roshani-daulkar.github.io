@@ -1,0 +1,332 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@300;500;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1f1f38;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Utility Classes */
+.flex {
+    display: flex;
+}
+
+.s-between {
+    justify-content: space-between;
+}
+
+.s-around {
+    justify-content: space-around;
+}
+
+.s-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-white {
+    color: #fff;
+}
+
+.bg-color {
+    background-color: #1f1f38;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.p-1 {
+    padding: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #dc85a7;
+    border-radius: 0.4rem;
+    background: transparent;
+    color: #df77ad;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #1f1f38;
+    border-color: #fff;
+}
+
+.live {
+    background-color: #da7fa8;
+    color: #1f1f38;
+}
+
+.live:hover {
+    background-color: #fff;
+}
+
+/* Navbar */
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #1f1f38;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#navbar ul {
+    list-style: none;
+    gap: 2rem;
+}
+
+#navbar ul li a {
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+    color: #da7fa8;
+}
+
+/* Home Section */
+#home {
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.home-left {
+    max-width: 50%;
+}
+
+.home-left h6 {
+    color: #da7fa8;
+    font-size: 1.5rem;
+}
+
+.home-left h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.home-left h4 {
+    font-size: 1.5rem;
+    color: #da7fa8;
+}
+
+.home-right img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #da7fa8;
+    object-fit: cover;
+}
+
+/* About Section */
+#about {
+    padding: 4rem 2rem;
+}
+
+.about-left img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #da7fa8;
+    object-fit: cover;
+}
+
+.about-right {
+    max-width: 50%;
+}
+
+.about-right p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills {
+    padding: 4rem 2rem;
+}
+
+.skills-left img {
+    width: 300px;
+    height: auto;
+}
+
+.skillss-container {
+    width: 100%;
+}
+
+.bar {
+    height: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.bar-content {
+    position: absolute;
+    top: -25px;
+}
+
+.bar .java {
+    width: 90%;
+    background-color: #e54c21;
+}
+
+.bar .html {
+    width: 90%;
+    background-color: #00a0e4;
+}
+
+.bar .css {
+    width: 80%;
+    background-color: yellow;
+}
+
+.bar .js {
+    width: 60%;
+    background-color: red;
+}
+
+.bar .python {
+    width: 50%;
+    background-color: #7952b3;
+}
+
+.bar .mysql {
+    width: 40%;
+    background-color: #61dafb;
+}
+
+/* Projects Section */
+#Projects {
+    padding: 4rem 2rem;
+}
+
+.projects-container {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.projects-item {
+    background-color: #2c2c6c;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.projects-item:hover {
+    transform: translateY(-10px);
+}
+
+.projects-item h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.projects-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+#Contact {
+    padding: 4rem 2rem;
+}
+
+.form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-div input,
+.form-div textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-div textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Footer */
+#footer {
+    background-color: #010101;
+    padding: 2rem;
+}
+
+#footer ul {
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#footer ul li a {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+#footer ul li a:hover {
+    color: #da7fa8;
+}
+
+.font-awesome {
+    gap: 1.5rem;
+}
+
+.font-awesome li i {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.font-awesome li i:hover {
+    color: #da7fa8;
+}
